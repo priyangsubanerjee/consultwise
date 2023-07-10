@@ -55,32 +55,34 @@ function HeroSection() {
               <p className="font-bebas text-base mb-5 text-neutral-500">
                 TRUSTED BY
               </p>
-              <Marquee speed={10} gradient>
+              <Marquee speed={50} gradient>
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-                  className="h-10 lg:h-14 grayscale filter invert ml-6"
+                  src="/works/aps.png"
+                  className="h-10 lg:h-14 grayscale ml-10"
                   alt=""
                 />
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-                  className="h-10 lg:h-14 grayscale filter invert ml-6"
+                  src="/works/icchedana.png"
+                  className="h-10 lg:h-14 grayscale ml-10"
                   alt=""
                 />{" "}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-                  className="h-10 lg:h-14 grayscale filter invert ml-6"
+                  src="/works/dvc.png"
+                  className="h-10 lg:h-14 grayscale ml-10"
                   alt=""
                 />{" "}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-                  className="h-10 lg:h-14 grayscale filter invert  ml-6"
+                  src="/works/lionsclub.png"
+                  className="h-10 lg:h-14 grayscale ml-10"
                   alt=""
                 />{" "}
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-                  className="h-10 lg:h-14 grayscale filter invert ml-6"
-                  alt=""
-                />
+                <div className="h-14 flex items-center ml-14">
+                  <img
+                    src="/works/speakingminds.png"
+                    className="h-10 lg:h-10 grayscale"
+                    alt=""
+                  />{" "}
+                </div>
               </Marquee>
             </div>
           </div>
@@ -88,7 +90,13 @@ function HeroSection() {
       </div>
       <div className="py-20 flex justify-center items-center relative">
         <div className="h-1/2 w-full bg-[#131D40] absolute bottom-0 left-0"></div>
-        <div className="w-[80%] h-[200px] md:h-[350px] lg:h-[500px] bg-teal-100 border-2 border-teal-500 rounded-xl z-10"></div>
+        <div className="w-[80%] h-[200px] md:h-[350px] border-2 border-black lg:h-[500px] rounded-xl z-10 overflow-hidden shadow-2xl">
+          <img
+            src="/office.webp"
+            className="h-full w-full object-cover"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

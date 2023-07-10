@@ -1,7 +1,15 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Services({ open, setOpen }) {
+  useEffect(() => {
+    document.addEventListener("click", (e) => {
+      if (e.target.classList.contains("backdrop")) {
+        setOpen(false);
+      }
+    });
+  }, [open]);
+
   return (
     <>
       <AnimatePresence>
@@ -10,9 +18,9 @@ function Services({ open, setOpen }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 h-full w-full bg-black/60 backdrop-blur z-20 flex items-center justify-center"
+            className="fixed inset-0 h-full w-full bg-black/60 backdrop-blur z-20 flex backdrop items-center justify-center"
           >
-            <div className="w-full relative h-full lg:max-h-[550px] lg:h-fit lg:w-[700px] bg-white lg:rounded-xl overflow-auto">
+            <div className="card w-full relative h-full lg:max-h-[550px] lg:h-fit lg:w-[700px] bg-white lg:rounded-xl overflow-auto">
               <div className="flex sticky top-0 inset-x-0 bg-white items-start px-7 py-7">
                 <div>
                   <h2 className="font-bebas text-5xl">SERVICES</h2>

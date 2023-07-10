@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import TestimonialCard from "../TestimonialCard";
+import testimonials from "@/static/testimonials";
 
 function Testimonials() {
   return (
@@ -7,9 +9,9 @@ function Testimonials() {
       <div className="pb-16" id="testimonials"></div>
       <p className="text-[#99D0DA] text-lg font-bebas">TESTIMONIALS</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 z-10">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+        {testimonials.map((testimonial, index) => {
+          return <TestimonialCard key={index} testimonial={testimonial} />;
+        })}
       </div>
       <img
         src="/spark.png"
