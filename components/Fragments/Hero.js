@@ -16,9 +16,9 @@ function HeroSection() {
             </h1>
             <div className="mt-7">
               <p className="font-medium font-serif text-neutral-600">
-                Established
+                Clients served
               </p>
-              <h2 className="font-bebas text-3xl mt-1">2023</h2>
+              <h2 className="font-bebas text-3xl mt-1">200+</h2>
             </div>
           </div>
 
@@ -92,7 +92,7 @@ function HeroSection() {
         <div className="h-1/2 w-full bg-[#131D40] absolute bottom-0 left-0"></div>
         <div className="w-[80%] h-[200px] md:h-[350px] border-2 border-black lg:h-[500px] rounded-xl z-10 overflow-hidden shadow-2xl">
           <img
-            src="/office.webp"
+            src="/office.png"
             className="h-full w-full object-cover"
             alt=""
           />
