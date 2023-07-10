@@ -89,7 +89,7 @@ function HeroSection() {
       </div>
       <div className="py-20 flex justify-center items-center relative">
         <div className="h-1/2 w-full bg-[#131D40] absolute bottom-0 left-0"></div>
-        <div className="w-[80%] h-[200px] lg:h-[500px] bg-teal-100 border-2 border-teal-500 rounded-xl z-10"></div>
+        <div className="w-[80%] h-[200px] md:h-[350px] lg:h-[500px] bg-teal-100 border-2 border-teal-500 rounded-xl z-10"></div>
       </div>
     </div>
   );
