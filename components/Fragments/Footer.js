@@ -26,10 +26,10 @@ function Footer() {
           ></iconify-icon>
         </a>
       </div>
-      <h3 className="font-serif mt-6 text-[#99D0DA]">
+      <h3 className="font-serif mt-6 text-[#99D0DA] text-center">
         © 2023 Consultwise Software Solutions
       </h3>
-      <h4 className="mt-4 text-xs text-white/60">
+      <h4 className="mt-4 text-xs text-white/60 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At, commodi?
       </h4>
     </footer>
