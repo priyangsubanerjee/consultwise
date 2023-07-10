@@ -23,8 +23,10 @@ function HeroSection() {
           </div>
 
           <div>
-            <p className="font-light leading-8 text-sm">
-              Transform Your Digital Presence with Consultwise <br />
+            <p className="text-base font-medium mt-7">
+              Transform Your Digital Presence with Consultwise
+            </p>
+            <p className="leading-8 text-sm mt-5 text-neutral-600">
               Are you ready to take your online presence to new heights? Look no
               further than Consultwise, your trusted partner in all things
               digital. We are a creative digital agency specializing in helping
@@ -37,18 +39,18 @@ function HeroSection() {
               Ready to Ignite Your Digital Journey?
             </p>
 
-            <p className="font-light leading-8 text-sm mt-5">
-              TWhether you are a startup looking to establish your online
+            <p className="leading-8 text-sm mt-5">
+              Whether you are a startup looking to establish your online
               presence or an established brand seeking to enhance your digital
               footprint, Consultwise is here to assist you. Let us help you
               unlock the full potential of your business in the digital
               landscape.
               <br />
-              <br /> Contact us today to schedule a consultation with our
-              experts and discover how Consultwise can transform your digital
-              presence into a powerful asset that drives growth, engagement, and
-              success. Together, let&apos;s embark on a journey of digital
-              excellence.
+              <br />
+              Contact us today to schedule a consultation with our experts and
+              discover how Consultwise can transform your digital presence into
+              a powerful asset that drives growth, engagement, and success.
+              Together, let&apos;s embark on a journey of digital excellence.
             </p>
 
             <div className="mt-10">
