@@ -5,6 +5,7 @@ import WorkCard from "../WorkCard";
 function Work() {
   return (
     <div className="bg-[#131D40] py-16 lg:py-32 px-6 lg:px-24 relative">
+      <div className="pb-16" id="work"></div>
       <img
         src="/ellipse_white.png"
         className="absolute top-0 -translate-x-[40%] -translate-y-[10%] left-0 h-[400px] z-0 -rotate-90 opacity-50"

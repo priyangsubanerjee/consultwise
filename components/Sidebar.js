@@ -33,15 +33,45 @@ function Sidebar({ open, setOpen }) {
                 </button>
               </div>
               <ul className="space-y-7 font-light text-lg px-7">
-                <li className="opacity-70 hover:opacity-100">About us</li>
+                <li
+                  onClick={() => {
+                    setOpen(false);
+                    document
+                      .getElementById("aboutus")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="opacity-70 hover:opacity-100"
+                >
+                  About us
+                </li>
                 <li
                   onClick={() => setServicesOpen(true)}
                   className="opacity-70 hover:opacity-100"
                 >
                   Services
                 </li>
-                <li className="opacity-70 hover:opacity-100">Work</li>
-                <li className="opacity-70 hover:opacity-100">Testimonial</li>
+                <li
+                  onClick={() => {
+                    setOpen(false);
+                    document
+                      .getElementById("work")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="opacity-70 hover:opacity-100"
+                >
+                  Work
+                </li>
+                <li
+                  onClick={() => {
+                    setOpen(false);
+                    document
+                      .getElementById("testimonials")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="opacity-70 hover:opacity-100"
+                >
+                  Testimonial
+                </li>
               </ul>
               <div className="p-6 mb-6 lg:flex items-center mt-10 space-y-3 lg:space-y-0 lg:space-x-5">
                 <button className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm">

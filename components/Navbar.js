@@ -18,15 +18,42 @@ function Navbar() {
       <nav className="h-20 px-6 lg:px-0 border-b lg:border-y border-black/30 lg:border-black flex items-center justify-between font-serif">
         <h1 className="font-medium text-lg lg:text-xl">CONSULTWISE</h1>
         <ul className="hidden lg:flex items-center justify-center space-x-8">
-          <li className="opacity-60 hover:opacity-100">About us</li>
+          <li
+            onClick={() => {
+              document
+                .getElementById("aboutus")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="opacity-60 hover:opacity-100"
+          >
+            About us
+          </li>
           <li
             onClick={() => setServicesOpen(true)}
             className="opacity-60 hover:opacity-100"
           >
             Services
           </li>
-          <li className="opacity-60 hover:opacity-100">Work</li>
-          <li className="opacity-60 hover:opacity-100">Testimonial</li>
+          <li
+            onClick={() => {
+              document
+                .getElementById("work")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="opacity-60 hover:opacity-100"
+          >
+            Work
+          </li>
+          <li
+            onClick={() => {
+              document
+                .getElementById("testimonials")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="opacity-60 hover:opacity-100"
+          >
+            Testimonial
+          </li>
         </ul>
         <button onClick={() => setSidebarOpen(true)} className="lg:hidden">
           <iconify-icon height="24" width="24" icon="cil:menu"></iconify-icon>

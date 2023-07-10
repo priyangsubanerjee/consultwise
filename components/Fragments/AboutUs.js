@@ -4,6 +4,7 @@ import React from "react";
 function AboutUs() {
   return (
     <div className="bg-[#131D40] py-32 px-6 lg:px-24 relative overflow-hidden">
+      <div className="pb-16" id="aboutus"></div>
       <p className="text-[#99D0DA] text-lg font-bebas">ABOUT US</p>
       <h1 className="text-3xl lg:text-5xl font-medium text-[#99D0DA] max-w-4xl lg:leading-[1.2] leading-[1.3] mt-7">
         At Consultwise, we sprinkle some pixie dust on your code creating
