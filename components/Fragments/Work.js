@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import WorkCard from "../WorkCard";
+import works from "@/static/works";
 
 function Work() {
   return (
@@ -13,12 +14,9 @@ function Work() {
       />
       <p className="text-[#99D0DA] text-xl font-bebas">WORK</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 z-10">
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+        {works.map((work, index) => {
+          return <WorkCard key={index} work={work} />;
+        })}
       </div>
     </div>
   );

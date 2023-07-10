@@ -7,8 +7,11 @@ function HeroSection() {
       <div className="px-6 lg:px-24 pt-10">
         <div className="grid grid-cols-1 gap-7  lg:grid-cols-2">
           <div>
-            <h1 className="text-[70px] lg:text-[90px] font-bebas leading-[1.1] text-neutral-800">
-              We are a <span className="text-teal-600">creative</span> <br />{" "}
+            <h2 className="font-light text-neutral-800">
+              Welcome to consultwise
+            </h2>
+            <h1 className="text-[70px] lg:text-[90px] font-bebas leading-[1.1] text-neutral-800 mt-4">
+              Your <span className="text-teal-600">Creative</span> <br />{" "}
               digital agency.
             </h1>
             <div className="mt-7">
@@ -21,10 +24,13 @@ function HeroSection() {
 
           <div>
             <p className="font-light leading-8 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              animi sequi sapiente repudiandae rerum repellendus vitae,
-              dignissimos, distinctio incidunt iure accusantium vel excepturi
-              velit et ullam. Atque consequuntur reiciendis est.
+              Transform Your Digital Presence with Consultwise <br /> <br />
+              Are you ready to take your online presence to new heights? Look no
+              further than Consultwise, your trusted partner in all things
+              digital. We are a creative digital agency specializing in helping
+              businesses like yours succeed in the digital world. With our
+              innovative strategies and expert team, we are here to guide you
+              towards achieving your online goals.
             </p>
             <div className="mt-10">
               <p className="font-bebas text-base mb-5 text-neutral-500">
