@@ -78,7 +78,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="lg:flex items-center mt-16 space-y-3 lg:space-y-0 lg:space-x-5">
+      <div className="hidden lg:hidden items-center mt-16 space-y-3 lg:space-y-0 lg:space-x-5">
         <button className="h-12 px-6 border border-transparent bg-[#99D0DA] text-[#131D40] font-bold text-sm">
           CONTACT US
         </button>

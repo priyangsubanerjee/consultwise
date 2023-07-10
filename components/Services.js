@@ -116,7 +116,7 @@ function Services({ open, setOpen }) {
                 </details>
               </div>
 
-              <div className="p-6 mb-6 lg:flex items-center mt-4 space-y-3 lg:space-y-0 lg:space-x-5">
+              <div className="p-6 mb-6 hidden lg:hidden items-center mt-4 space-y-3 lg:space-y-0 lg:space-x-5">
                 <button className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm">
                   CONTACT US
                 </button>
