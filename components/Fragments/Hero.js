@@ -33,7 +33,7 @@ function HeroSection() {
       <div className="px-6 lg:px-24 pt-10">
         <div className="grid grid-cols-1 gap-7  lg:grid-cols-2">
           <div>
-            <h1 className="text-[70px] lg:text-[90px] font-bebas leading-[1.1] text-neutral-700">
+            <h1 className="text-[70px] lg:text-[90px] font-bebas leading-[1.1] text-neutral-800">
               We are a <span className="text-teal-600">creative</span> <br />{" "}
               digital agency.
             </h1>
