@@ -3,7 +3,7 @@ import React from "react";
 
 function TestimonialCard() {
   return (
-    <div className="bg-[#192654] p-8 rounded-3xl">
+    <div className="bg-[#192654] p-8 rounded-xl">
       <img
         src="/user.webp"
         className="h-14 w-14 rounded-full object-cover"

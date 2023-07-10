@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-[#131D40] py-32 px-24 flex flex-col items-center">
+    <footer className="bg-[#131D40] py-32 xp-6 lg:px-24 flex flex-col items-center">
       <div className="flex items-center justify-center space-x-5">
         <a href="#" className="text-[#99D0DA]">
           <iconify-icon
