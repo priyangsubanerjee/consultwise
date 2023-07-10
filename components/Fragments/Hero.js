@@ -92,7 +92,7 @@ function HeroSection() {
         <div className="h-1/2 w-full bg-[#131D40] absolute bottom-0 left-0"></div>
         <div className="w-[80%] h-[200px] md:h-[350px] border-2 border-black lg:h-[500px] rounded-xl z-10 overflow-hidden shadow-2xl">
           <img
-            src="/office.png"
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             className="h-full w-full object-cover"
             alt=""
           />
