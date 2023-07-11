@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Services from "./Services";
 import { AnimatePresence, motion } from "framer-motion";
+import ContactUsCard from "./ContactUs";
 
 function Sidebar({ open, setOpen }) {
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [contactUsOpen, setContactUsOpen] = useState(false);
 
   useEffect(() => {
     if (servicesOpen) {
@@ -74,10 +76,16 @@ function Sidebar({ open, setOpen }) {
                 </li>
               </ul>
               <div className="p-6 mb-6 lg:flex items-center mt-10 space-y-3 lg:space-y-0 lg:space-x-5">
-                <button className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm">
+                <button
+                  onClick={() => setContactUsOpen(true)}
+                  className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm"
+                >
                   CONTACT US
                 </button>
-                <button className="h-12 px-6 border border-[#192654] bg-transparent text-[#192654] font-bold text-sm">
+                <button
+                  onClick={() => setContactUsOpen(true)}
+                  className="h-12 px-6 border border-[#192654] bg-transparent text-[#192654] font-bold text-sm"
+                >
                   PERSONALIZE YOUR WEBSITE
                 </button>
               </div>
@@ -86,6 +94,7 @@ function Sidebar({ open, setOpen }) {
         )}
       </AnimatePresence>
       <Services open={servicesOpen} setOpen={setServicesOpen} />
+      <ContactUsCard open={contactUsOpen} setOpen={setContactUsOpen} />
     </>
   );
 }

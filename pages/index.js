@@ -1,3 +1,4 @@
+import ContactUs from "@/components/ContactUs";
 import AboutUs from "@/components/Fragments/AboutUs";
 import Footer from "@/components/Fragments/Footer";
 import HeroSection from "@/components/Fragments/Hero";
@@ -18,11 +19,6 @@ export default function Home() {
       <Work />
       <Testimonials />
       <Footer />
-      {/* <HeroSection />
-      <AboutUs />
-      <Work />
-      <Testimonials />
-      <Footer /> */}
     </main>
   );
 }

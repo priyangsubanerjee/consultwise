@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
+import PersonalizeCard from "../ContactUs";
 
 function AboutUs() {
+  const [contactUsOpen, setContactUsOpen] = useState(false);
   return (
     <div className="bg-[#131D40] py-32 px-6 lg:px-24 relative overflow-hidden">
       <div className="pb-16" id="aboutus"></div>
@@ -78,11 +80,17 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="hidden lg:hidden items-center mt-16 space-y-3 lg:space-y-0 lg:space-x-5">
-        <button className="h-12 px-6 border border-transparent bg-[#99D0DA] text-[#131D40] font-bold text-sm">
+      <div className="lg:flex items-center mt-16 space-y-3 lg:space-y-0 lg:space-x-5">
+        <button
+          onClick={() => setContactUsOpen(true)}
+          className="h-12 px-6 border border-transparent bg-[#99D0DA] text-[#131D40] font-bold text-sm"
+        >
           CONTACT US
         </button>
-        <button className="h-12 px-6 border border-[#99D0DA] bg-transparent text-[#99D0DA] font-bold text-sm">
+        <button
+          onClick={() => setContactUsOpen(true)}
+          className="h-12 px-6 border border-[#99D0DA] bg-transparent text-[#99D0DA] font-bold text-sm"
+        >
           PERSONALIZE YOUR WEBSITE
         </button>
       </div>
@@ -91,6 +99,7 @@ function AboutUs() {
         className="absolute right-0 translate-x-[40%] lg:-translate-x-[20%] translate-y-[20%] opacity-50 top-0 h-44 object-contain lg:h-72 w-fit"
         alt=""
       />
+      <PersonalizeCard open={contactUsOpen} setOpen={setContactUsOpen} />
     </div>
   );
 }

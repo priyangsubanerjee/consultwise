@@ -1,8 +1,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect } from "react";
+import ContactUsCard from "./ContactUs";
 
 function Services({ open, setOpen }) {
+  const [contactUsOpen, setContactUsOpen] = React.useState(false);
   useEffect(() => {
+    open
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+
     document.addEventListener("click", (e) => {
       if (e.target.classList.contains("backdrop")) {
         setOpen(false);
@@ -116,11 +122,17 @@ function Services({ open, setOpen }) {
                 </details>
               </div>
 
-              <div className="p-6 mb-6 hidden lg:hidden items-center mt-4 space-y-3 lg:space-y-0 lg:space-x-5">
-                <button className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm">
+              <div className="p-6 mb-6 lg:flex items-center mt-4 space-y-3 lg:space-y-0 lg:space-x-5">
+                <button
+                  onClick={() => setContactUsOpen(true)}
+                  className="h-12 px-6 border border-transparent bg-[#192654] text-[#fff] font-bold text-sm"
+                >
                   CONTACT US
                 </button>
-                <button className="h-12 px-6 border border-[#192654] bg-transparent text-[#192654] font-bold text-sm">
+                <button
+                  onClick={() => setContactUsOpen(true)}
+                  className="h-12 px-6 border border-[#192654] bg-transparent text-[#192654] font-bold text-sm"
+                >
                   PERSONALIZE YOUR WEBSITE
                 </button>
               </div>
@@ -128,6 +140,7 @@ function Services({ open, setOpen }) {
           </motion.div>
         )}
       </AnimatePresence>
+      <ContactUsCard open={contactUsOpen} setOpen={setContactUsOpen} />
     </>
   );
 }
